@@ -87,7 +87,7 @@ public class LogTest {
     @Story("Авторизация пользователя при незарегистрированном пароле")
     public void passwordFieldUnregisteredUser() {
         logSteps.notValidPass();
-        logSteps.checkToastMessageText("Something went wrong. Try again later.", decorView);
+        logSteps.checkToastMessageText("Wrong login or password.", decorView);
         logPage.title.check(matches(isDisplayed()));
         mainPage.mainBadge.check(matches(not(isDisplayed())));
     }
@@ -97,7 +97,7 @@ public class LogTest {
     @Story("Авторизация пользователя при незарегистрированном логине")
     public void loginFieldUnregisteredUser() {
         logSteps.notValidLogIn();
-        logSteps.checkToastMessageText("Something went wrong. Try again later.", decorView);
+        logSteps.checkToastMessageText("Wrong login or password.", decorView);
         logPage.title.check(matches(isDisplayed()));
         mainPage.mainBadge.check(matches(not(isDisplayed())));
     }

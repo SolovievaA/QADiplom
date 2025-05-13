@@ -1,0 +1,145 @@
+{
+    "name": "loginFieldUnregisteredUser",
+    "start": 1747049273425,
+    "stop": 1747049289086,
+    "stage": "finished",
+    "description": "Тестирование вкладки Авторизация",
+    "descriptionHtml": null,
+    "status": "broken",
+    "statusDetails": {
+        "message": "No views in hierarchy found matching: an instance of android.widget.TextView and view.getText() with or without transformation to match: is \"Wrong login or password.\"\n\nView Hierarchy:\n+>LinearLayout{id=-1, visibility=VISIBLE, width=765, height=129, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,63)(wrapxwrap) gr=BOTTOM CENTER ty=TOAST fmt=TRANSLUCENT wanim=0x1030004\n  fl=NOT_FOCUSABLE NOT_TOUCHABLE KEEP_SCREEN_ON HARDWARE_ACCELERATED}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+->MaterialTextView{id=16908299, res-name=message, visibility=VISIBLE, width=639, height=51, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=39.0, text=Something went wrong. Try again later., input-type=0, ime-target=false, has-links=false} \nThe complete view hierarchy is available in artifact file 'view-hierarchy-1.txt'.",
+        "trace": "androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: an instance of android.widget.TextView and view.getText() with or without transformation to match: is \"Wrong login or password.\"\n\nView Hierarchy:\n+>LinearLayout{id=-1, visibility=VISIBLE, width=765, height=129, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,63)(wrapxwrap) gr=BOTTOM CENTER ty=TOAST fmt=TRANSLUCENT wanim=0x1030004\n  fl=NOT_FOCUSABLE NOT_TOUCHABLE KEEP_SCREEN_ON HARDWARE_ACCELERATED}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+->MaterialTextView{id=16908299, res-name=message, visibility=VISIBLE, width=639, height=51, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=39.0, text=Something went wrong. Try again later., input-type=0, ime-target=false, has-links=false} \nThe complete view hierarchy is available in artifact file 'view-hierarchy-1.txt'.\n\tat androidx.test.espresso.NoMatchingViewException$Builder.build(NoMatchingViewException.java:185)\n\tat androidx.test.espresso.base.DefaultFailureHandler.lambda$getNoMatchingViewExceptionTruncater$0(DefaultFailureHandler.java:93)\n\tat androidx.test.espresso.base.DefaultFailureHandler$$ExternalSyntheticLambda1.truncateExceptionMessage(Unknown Source:2)\n\tat androidx.test.espresso.base.ViewHierarchyExceptionHandler.handleSafely(ViewHierarchyExceptionHandler.java:72)\n\tat androidx.test.espresso.base.ViewHierarchyExceptionHandler.handleSafely(ViewHierarchyExceptionHandler.java:38)\n\tat androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)\n\tat androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)\n\tat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:385)\n\tat androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:366)\n\tat ru.iteco.fmhandroid.ui.steps.LogSteps.checkToastMessageText(LogSteps.java:70)\n\tat ru.iteco.fmhandroid.ui.tests.LogTest.loginFieldUnregisteredUser(LogTest.java:100)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat androidx.test.internal.runner.junit4.statement.RunBefores.evaluate(RunBefores.java:80)\n\tat androidx.test.internal.runner.junit4.statement.RunAfters.evaluate(RunAfters.java:61)\n\tat org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)\n\tat io.qameta.allure.android.rules.ScreenshotRule$apply$1.evaluate(ScreenshotRule.kt:22)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)\n\tat io.qameta.allure.android.runners.AllureAndroidJUnit4.run(AllureAndroidJUnitRunners.kt:29)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)\n\tat androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:467)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)\n"
+    },
+    "steps": [
+        {
+            "name": "Загрузка приложения",
+            "start": 1747049274579,
+            "stop": 1747049274579,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Загрузка вкладки авторизации",
+            "start": 1747049275823,
+            "stop": 1747049275823,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Авторизация в приложении с незарегистрированным логином",
+            "start": 1747049280856,
+            "stop": 1747049280856,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка текста сообщения",
+            "start": 1747049286074,
+            "stop": 1747049286074,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Выход из профиля",
+            "start": 1747049287188,
+            "stop": 1747049287188,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+        {
+            "source": "556a72ce-797a-4b22-815f-533880a8bb6c-attachment.png",
+            "name": "1747049273427",
+            "type": "image/png"
+        }
+    ],
+    "parameters": [
+    ],
+    "uuid": "a80dc7bc-170c-4781-8167-18b195bbefc1",
+    "historyId": "53b6467d70987152f289e6640dba5956",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.LogTest.loginFieldUnregisteredUser",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.LogTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "loginFieldUnregisteredUser"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.LogTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(421)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Авторизация пользователя при незарегистрированном логине"
+        }
+    ]
+}

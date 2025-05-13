@@ -55,7 +55,7 @@ public class DeleteNewsTest {
     @Story("Удаление новости")
     public void deleteNews() {
 
-        String title = "удалить";
+        String title = "массаж";
         String description = "новость";
         String publicationDate = getCurrentDate();
         String publicationTime = getCurrentTime();
